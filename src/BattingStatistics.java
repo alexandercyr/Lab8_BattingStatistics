@@ -62,7 +62,7 @@ public class BattingStatistics {
 			//For each at bat, enter the value for hits
 			for (int j = 0; j < player.length; j++) {
 				// System.out.print("Result for at-bat "+j+": " );
-				int hitValue = Validator.getInt(scnr, "Result for at-bat " + j + ": ", 0, 4);
+				int hitValue = Validator.getInt(scnr, "Result for at-bat " + (j+1) + ": ", 0, 4);
 				bases += hitValue; //add hit value to total number of bases
 				player[j] = hitValue; 
 				//If player did not strikeout, add one to hit counter
